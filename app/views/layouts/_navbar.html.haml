@@ -1,7 +1,7 @@
 %nav.navbar.navbar-inverse
   .container-fluid
     .navbar-header
-      %a.navbar-brand{:href => "voicebox.html"} Agate
+      %a.navbar-brand{:href => "#"} Agate
     %ul.nav.navbar-nav
       %li
         %a{:href => "#"} 公司简介 
@@ -16,13 +16,14 @@
             %span.glyphicon.glyphicon-question-sign
             HELP
         %li
-          = link_to "注册", new_user_registration_path do
+          = link_to new_user_registration_path do
             %span.glyphicon.glyphicon-user
+              "注册"
         %li
           = link_to "登录", new_user_session_path
       - else
         %li
-          = link_to current_user.name, nil
+          = link_to current_user.email, nil
         %li
           %a{:href=>destroy_user_session_path, "data-method"=>"delete"} 注销
     -#
