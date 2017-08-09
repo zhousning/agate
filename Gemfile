@@ -59,7 +59,7 @@ gem 'devise'
 
 gem 'annotate'
 
-#gem 'settingslogic'
+gem 'settingslogic'
 
 #gem 'rails_kindeditor', :git=>'git@bitbucket.org:jilinbeauty/thesis_kindeditor.git'
 

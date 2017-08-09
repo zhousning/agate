@@ -1,0 +1,11 @@
+defaults: &defaults
+  status: 0
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
